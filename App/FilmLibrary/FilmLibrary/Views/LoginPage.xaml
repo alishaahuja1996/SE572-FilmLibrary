@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 x:Class="FilmLibrary.Views.LoginPage"
+			 BackgroundColor="#181616"
+			 Title="Login">
+	<StackLayout HorizontalOptions="CenterAndExpand"
+				 VerticalOptions="CenterAndExpand">
+		<Label Text="Enter Username"
+			   FontSize="30"
+			   HorizontalTextAlignment="Center"
+			   TextColor="White"/>
+		<Entry Text="{Binding Path=Username}"
+			   WidthRequest="300"
+			   HeightRequest="50"
+			   Background="White"
+               Placeholder="Example: djoe123..." />
+		<StackLayout Padding="0,40,0,0">
+			<Button Text="Submit"
+					FontSize="25"
+					Padding="10"
+					BackgroundColor="#4CAF50"
+					TextColor="White"
+					Clicked="OnSubmitButtonClicked" />
+		</StackLayout>
+	</StackLayout>
+</ContentPage>

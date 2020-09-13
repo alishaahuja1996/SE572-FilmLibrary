@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FilmLibrary.Views.ViewFilmsPage"
+             Title="View Films">
+    <StackLayout BackgroundColor="#4CAF50">
+
+        <StackLayout Padding="20,20,20,5"
+                     HorizontalOptions="Center"
+                     Orientation="Horizontal">
+            <Label Text="Title"
+                   FontSize="25"
+                   Padding="0,0,60,0"
+                   VerticalTextAlignment="Start" />
+            <Label Text="Rating (out of 5)"
+                   FontSize="25"
+                   VerticalTextAlignment="End" />
+        </StackLayout>
+
+        <Label Text="*Select film to modify its rating"
+               HorizontalOptions="Center"
+               TextColor="White"
+               FontSize="Caption"/>
+
+        <ListView x:Name="listView"
+                  BackgroundColor="#181616"
+                  ItemSelected="OnFilmSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="20,20,20,5"
+                                     HorizontalOptions="Center"
+                                     Orientation="Horizontal">
+                            <Label Text="{Binding Name}"
+                                   Padding="0,0,30,0"
+                                   TextColor="White"
+                                   VerticalTextAlignment="Start" />
+                            <Label Text="{Binding Rating}"
+                                   TextColor="White"
+                                   VerticalTextAlignment="Center" />
+                        </StackLayout>
+                   </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackLayout>
+</ContentPage>

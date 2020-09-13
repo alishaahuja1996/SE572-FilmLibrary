@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 x:Class="FilmLibrary.Views.EnterFilmsPage"
+			 BackgroundColor="#181616"
+			 Title="Enter Films">
+    <StackLayout HorizontalOptions="CenterAndExpand"
+				 VerticalOptions="CenterAndExpand">
+
+		<Label Text="Enter Film Title"
+			   FontSize="30"
+			   HorizontalTextAlignment="Center"
+			   TextColor="White" />
+		<Entry Text="{Binding Path=Name}"
+		       WidthRequest="300"
+			   HeightRequest="50"
+			   Background="White"
+               Placeholder="Enter text here..." />
+		<Label Text="Enter Film Rating"
+		       Padding="0,20,0,0"
+			   FontSize="30"
+			   HorizontalTextAlignment="Center"
+			   TextColor="White" />
+		<Entry Text="{Binding Path=Rating}"
+		       WidthRequest="300"
+			   HeightRequest="50"
+			   Background="White"
+               Placeholder="Ranging from 1 to 5... Example: 4" />
+
+		<StackLayout Padding="0,40,0,0">
+			<Button Text="Save Film"
+					FontSize="25"
+					Padding="10"
+					BackgroundColor="#4CAF50"
+					TextColor="White"
+					Clicked="OnSaveButtonClicked" />
+		</StackLayout>
+
+	</StackLayout>
+</ContentPage>

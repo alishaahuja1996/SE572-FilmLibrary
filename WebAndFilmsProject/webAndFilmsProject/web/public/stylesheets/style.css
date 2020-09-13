@@ -1,0 +1,122 @@
+body {
+  padding: 50px;
+  font: 30px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(24, 22, 22);
+  color: white;
+  text-align: center;
+}
+
+h1{
+  color: #4CAF50;
+}
+
+.center {
+  margin: auto;
+  width: 70%;
+  border: 20px solid #4CAF50;
+  padding: 10px;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: max-content;
+}
+
+.button:hover {
+  color: rgb(24, 22, 22)
+} 
+
+.input {
+  padding: 10px;
+}
+
+.output {
+  padding: 10px;
+}
+
+.inputLogin {
+  padding: 10px;
+}
+
+#filmTextbox {
+  width: 70%;
+  margin-bottom : 20px;
+  padding: 12px 20px;
+}
+
+#ratingTextbox {
+  width: 40%;
+  margin-bottom : 20px;
+  padding: 12px 20px;
+}
+
+#login {
+  width: 40%;
+  margin-bottom : 20px;
+  padding: 12px 20px;
+}
+
+hr {
+  opacity: 0.6;
+}
+
+.table {
+  text-align: center;
+  padding-bottom: 30px;
+  margin: auto;
+  width: 100%;
+}
+
+.subHeading {
+  font-size: 18px;
+  color: #4CAF50;
+}
+
+.hidden {
+  visibility: hidden;
+  display: none;
+}
+
+.show {
+  visibility: visible;
+}
+
+.footer {
+  font-size: 15px;
+  padding-top: 100px;
+}
+
+.errorMsg {
+  font-size: 18px;
+  color: red;
+}
+
+.newRatingTextbox {
+  width: 20%;
+  height: 30px;
+}
+
+.newRatingButton {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: max-content;
+}
+
+.newRatingButton:hover {
+  color: rgb(24, 22, 22)
+} 

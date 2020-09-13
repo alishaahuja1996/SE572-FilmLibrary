@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 x:Class="FilmLibrary.Views.ModifyFilmRatingPage"
+			 BackgroundColor="#181616"
+			 Title="Modify Rating">
+    <StackLayout HorizontalOptions="CenterAndExpand"
+				 VerticalOptions="CenterAndExpand">
+
+		<StackLayout HorizontalOptions="Start"
+                     Orientation="Horizontal">
+			<Label Text="Selected Film: "
+				   FontSize="25"
+		           TextColor="White"
+				   VerticalTextAlignment="Center" />
+			<Label Text="{Binding Path=Name}"
+				   FontSize="25"
+		           TextColor="White"
+				   VerticalTextAlignment="Center" />
+		</StackLayout>
+
+		<StackLayout HorizontalOptions="Start"
+                     Orientation="Horizontal"
+					 Padding="0,20,0,0">
+			<Label Text="New Rating:"
+				   Padding="0,10,0,0"
+				   FontSize="25"
+		           TextColor="White"
+				   VerticalTextAlignment="Start" />
+			<Entry Text="{Binding Path=Rating}"
+				   WidthRequest="200"
+				   HeightRequest="50"
+				   Background="White"
+				   Placeholder="Ranging from 1 to 5" />
+		</StackLayout>
+
+		<StackLayout Padding="0,40,0,0">
+			<Button Text="Modify"
+					FontSize="25"
+					Padding="10"
+					BackgroundColor="#4CAF50"
+					TextColor="White"
+					Clicked="OnModifyButtonClicked" />
+		</StackLayout>
+
+	</StackLayout>
+</ContentPage>

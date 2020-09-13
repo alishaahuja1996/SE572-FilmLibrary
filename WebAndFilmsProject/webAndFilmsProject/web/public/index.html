@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <script type="text/javascript" src="./javascripts/films.js"></script>
+        <link type="text/css" rel="stylesheet" href="./stylesheets/style.css">
+        <title>SE572-Final Project</title>
+    </head>
+    <body>
+        <div class="center">
+            <h1>Films Library</h1>
+                <form class="inputLogin" action="#" name= "inputLoginForm" onsubmit="return API.login()">
+                    <p>Enter username:</p>
+                    <input type="text" id="login" name="inputText" placeholder="Example: jDoe123">
+                    <br><br>
+                    <input type="Submit" class="button" value="Submit">
+                    <p class="subHeading hidden" id="successLoginMsg"></p>
+                    <p class="errorMsg hidden" id="errorLoginMsg"></p>
+                </form>
+            <hr>    
+                <form class="input" action="#" name= "inputForm" onsubmit="return API.createFilm()">
+                    <p>Enter title of Movie:</p>
+                    <input type="text" id="filmTextbox" name="inputText" placeholder="Enter Text here...">
+                    <p>Enter rating for Movie:</p>
+                    <input type="text" id="ratingTextbox" name="inputText" placeholder="Ranging from 1 to 5... Example: 4">
+                    <br><br>
+                    <input type="Submit" class="button" value="Submit">
+                    <p class="subHeading hidden" id="successMsg"></p>
+                    <p class="errorMsg hidden" id="errorMsg"></p>
+                </form>
+            <hr>
+                <form class="output" action="#" onsubmit="return API.getFilms()">
+                    <p>View Films Library List</p>
+                    <input type="Submit" class="button" value="Get Films">
+                    <br>
+                    <p class="subHeading hidden" id="successViewFilmsMsg"></p>
+                    <p class="errorMsg hidden" id="errorViewFilmsMsg"></p>
+                </form>
+                <table class="hidden" id="filmTable">
+                    <thead>
+                        <tr>
+                            <th class="subHeading">Film Title</th>
+                            <th class="subHeading">Rating Score</th>
+                            <th class="subHeading">Would you like to modify film rating?</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody"></tbody>
+                </table>
+        </div>
+        <footer class="footer"><hr>By<br>Fnu Alisha<br>SE 572-900 Final Project<br>Drexel University</footer>
+    </body>
+</html>
